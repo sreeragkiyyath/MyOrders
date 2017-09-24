@@ -1,1 +1,37 @@
-<app-recipe-item></app-recipe-item>
+
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success"> new </button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12"> 
+
+            <!-- <ul class="list-group" *ngFor="let items of RecipeModel">
+                    <li class="list-group-item">{{ items.name }}</li>
+                    <li class="list-group-item">{{ items.description }}</li>
+                    <li class="list-group-item">  <img src="https://static.pexels.com/photos/5317/food-salad-restaurant-person.jpg" 
+                        class="img-responsive"
+                        style="max-height:50px"
+                        alt="online-url"/>
+                    </li>
+            </ul>
+                 -->
+            
+            <a href="#" class="list-group-item  clearfix"  *ngFor="let items of recipeData">
+            <div class="pull-left">
+                 <h4 class="list-group-item-heading">:: {{ items.name }} </h4>  
+                 <p class="list-group-item-text">:: {{ items.description }} </p>
+            </div> 
+            <span class="pull-right">
+                <img src="{{ items.imagePath }}" 
+                      class="img-responsive"
+                      style="max-height:50px"
+                      alt="online-url"/>    
+            </span>     
+            </a>       
+ 
+        <app-recipe-item></app-recipe-item>
+    </div>
+</div>

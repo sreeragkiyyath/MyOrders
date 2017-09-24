@@ -1,0 +1,10 @@
+.recipe-position{
+position: absolute;
+margin: auto;
+top: 120px;
+bottom: 123px;
+left:0;
+right:0;
+border: 1px solid black ;
+
+}
